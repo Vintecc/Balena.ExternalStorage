@@ -38,7 +38,7 @@ if [[ -z "$ID_FS_TYPE" || -z "$ID_FS_UUID_ENC" ]]; then
 fi
 
 # Construct the mount point path
-MOUNT_POINT="/mnt/storage-$ID_FS_LABEL_ENC"
+MOUNT_POINT="/mnt/external-storage"
 
 # Bail if file system is not supported by the kernel
 if ! grep -qw "$ID_FS_TYPE" /proc/filesystems; then
